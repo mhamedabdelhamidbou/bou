@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>My Website</title>
+  <style>
+    /* Improvements for the Competences Section */
+    #services .services.container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 50px 20px;
+    }
+    #services .service-top {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    #services .service-bottom {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      width: 100%;
+    }
+    #services .service-item {
+      background: #f4f4f4;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+    #services .service-item:hover {
+      transform: translateY(-10px);
+    }
+    #services .icon img {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 20px;
+    }
+    #services h2 {
+      margin-bottom: 10px;
+      font-size: 1.5rem;
+    }
+    #services p {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero">
+            <h1><span>M</span>HAMED ABDELHAMID <span>B</span>OU</h1>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="#hero" data-after="Home">Home</a></li>
+            <li><a href="#services" data-after="Compétences">Compétences</a></li>
+            <li><a href="#projects" data-after="Projects">Projects</a></li>
+            <li><a href="#about" data-after="About">About</a></li>
+            <li><a href="#contact" data-after="Contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+
+
+  <!-- Hero Section  -->
+  <section id="hero">
+    <div class="hero container">
+      <div>
+        <h1>Hello, <span></span></h1>
+        <h1>My Name is <span></span></h1>
+        <h1>MHAMED ABDELHAMID<span></span></h1>
+        <a href="#projects" type="button" class="cta">Portfolio</a>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section  -->
+
+  <!-- Competences Section -->
+  <section id="services">
+    <div class="services container">
+      <div class="service-top">
+        <h1 class="section-title">Comp<span>é</span>tences</h1>
+      </div>
+      <div class="service-bottom">
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
+          <h2>Analyse Quantitative</h2>
+          <p>Modélisation et analyse quantitative des marchés financiers, y compris les méthodes statistiques avancées et l'utilisation de logiciels financiers.</p>
+        </div>
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
+          <h2>Programmation Financière</h2>
+          <p>Programmation en Python, R, et MATLAB, avec une spécialisation dans les bibliothèques financières comme Pandas, NumPy, et SciPy pour la modélisation financière.</p>
+        </div>
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
+          <h2>Gestion des Risques</h2>
+          <p>Analyse des risques de marché et mise en œuvre de stratégies de couverture. Utilisation de modèles de risques pour évaluer et minimiser l'exposition financière.</p>
+        </div>
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
+          <h2>Mathématiques Financières Avancées</h2>
+          <p>Valorisation des instruments financiers tels que les options, les futures, et autres dérivés. Maîtrise des techniques de Monte Carlo et autres simulations stochastiques.</p>
+        </div>
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
+          <h2>Développement d'Applications Financières</h2>
+          <p>Création d'applications interactives en utilisant Streamlit et Django pour visualiser les données financières et améliorer la prise de décision.</p>
+        </div>
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
+          <h2>Analyse Économique et Macroéconomique</h2>
+          <p>Étude de l'impact des indicateurs macroéconomiques sur les marchés financiers et élaboration de rapports économiques pour des prises de décision éclairées.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Competences Section -->
+<!-- Projects Section -->
+<section id="projects">
+  <div class="projects container">
+    <div class="projects-header">
+      <h1 class="section-title">Mes <span>Projets</span></h1>
+    </div>
+    <div class="all-projects">
+      <div class="project-item">
+        <div class="project-info">
+          <h1>App Web de Classification Hiérarchique et K-Means</h1>
+          <h2>mars 2024 - présent</h2>
+          <p>Python, visualisation des résultats, interaction utilisateur. Projet associé à l'ENSA Agadir.</p>
+          <p><strong>Compétences :</strong> Python</p>
+        </div>
+        <div class="project-img">
+          <img src="./img/img-1.png" alt="img">
+        </div>
+      </div>
+      <div class="project-item">
+        <div class="project-info">
+          <h1>TradeMentor - Signaux de Trading et Chatbot AI</h1>
+          <h2>oct. 2024</h2>
+          <p>Signaux trading, backtesting, chatbot AI. SMA, RSI, MACD.</p>
+          <p><strong>Compétences :</strong> Python, Marchés financiers</p>
+        </div>
+        <div class="project-img">
+          <img src="./img/img-1.png" alt="img">
+        </div>
+      </div>
+      <div class="project-item">
+        <div class="project-info">
+          <h1>Simulation Monte Carlo pour les Options</h1>
+          <h2>nov. 2023 - févr. 2024</h2>
+          <p>Évaluation des options, calcul de volatilité avec Python. App interactive Streamlit.</p>
+          <p><strong>Compétences :</strong> Python, Finance quantitative</p>
+        </div>
+        <div class="project-img">
+          <img src="./img/img-1.png" alt="img">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Projects Section -->
+
+
+<!-- About Section -->
+<section id="about">
+  <div class="about container">
+    <div class="col-left">
+      <div class="about-img">
+        <img src="./img/img-2.png" alt="img">
+      </div>
+    </div>
+    <div class="col-right">
+      <h1 class="section-title">About <span>me</span></h1>
+      <h2>Front End Developer</h2>
+      <p>Je suis Mhamed Abdelhamid Bou, un élève ingénieur spécialisé en finance et ingénierie décisionnelle, passionné par la finance de marché. Mon intérêt principal réside dans l'analyse des données financières et l'application de modèles quantitatifs pour prendre des décisions éclairées sur les marchés financiers.</p>
+      <a href="CV.pdf" class="cta" download="CV.pdf">Download Resume</a>
+    </div>
+  </div>
+</section>
+<!-- End About Section -->
+<!-- Contact Section -->
+<section id="contact">
+  <div class="contact container">
+    <div>
+      <h1 class="section-title">Contact <span>info</span></h1>
+    </div>
+    <div class="contact-items">
+      <div class="contact-item">
+        <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" /></div>
+        <div class="contact-info">
+          <h1>Phone</h1>
+          <h2>+212 663-899784</h2>
+        </div>
+      </div><div class="contact-item">
+        <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
+        <div class="contact-info" style="font-size: 1rem;">
+          <h1>Email</h1>
+          <h2>mhamedabdelhamidbou
+            @gmail.com</h2>
+        </div>
+      </div>      
+      <div class="contact-item">
+        <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" /></div>
+        <div class="contact-info">
+          <h1>Address</h1>
+          <h2>Agadir, Maroc</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Contact Section -->
+
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand">
+        <h1><span>M</span>HAMED ABDELHAMID <span>B</span>OU</h1>
+      </div>
+      <h2>Ne cessez jamais d'apprendre, car la vie ne cesse jamais d'enseigner.</h2>
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png" /></a>
+        </div>
+        
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/behance.png" /></a>
+        </div>
+      </div>
+      <p>Copyright © 2024 BOU. All rights reserved</p>
+    </div>
+  </section>
+  <!-- End Footer -->
+  <script src="./app.js"></script>
+</body>
+
+</html>
